@@ -4,7 +4,7 @@ body{
     font-family: sans-serif;
 }
 
-/* giuarda as variaveis*/
+/*Guarda as variaveis*/
 :root {
     --azul: #32b9cd;
     --amarelo: #e3b062;
@@ -34,10 +34,10 @@ body{
     justify-content: space-between;
     color: var(--amarelo);
     list-style: none;
-    width: 300px; /*largura*/
+    width: 300px; /*Largura*/
 }
 
-.navbar a{/*para todas as tags "a" dentro da navbar vão ter uma estilização especifica*/
+.navbar a{
     color: var(--amarelo);
     text-decoration: none; /*Tira qualquer decoração do texto*/
 }
@@ -53,13 +53,13 @@ body{
     height: 400px;/* 400px é um valor fixo*/
     width: 100%; /* 100% é um valor fluido*/
     background-image: url(../assets/imgs/bg-jelly-fish-para-home.png);/* ../ entende que voce esta procurando uma caminho*/
-    background-size: cover; /* Para que a imagem ocupe tudo */
+    background-size: cover;
 }
 
 .banner .container{
     height: 100%;
     width: 100%;
-    display: flex; /*define como flexivel*/
+    display: flex; /*Define como flexivel*/
     justify-content: center;
     align-items: center;
 }
@@ -99,7 +99,7 @@ body{
     align-items: center;
 }
 
-.box{ /* definição das imagens*/
+.box{ /* Definição das imagens*/
     width: 250px;
     display: flex;
     flex-direction: column;
