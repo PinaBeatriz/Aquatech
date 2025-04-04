@@ -1,0 +1,143 @@
+/* Adicionar aqui toda a estilização criada para sua aplicação. */
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* giuarda as variaveis*/
+:root {
+    --azul: #32b9cd;
+    --amarelo: #e3b062;
+}
+
+/*HEADER*/
+
+.header{
+    background-color: black;
+    border-bottom: 3px solid var(--azul); /* var chama a variavel criada em root*/
+
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+}
+
+.titulo{
+    color: var(--azul);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    color: var(--amarelo);
+    list-style: none;
+    width: 300px; /*largura*/
+}
+
+.navbar a{/*para todas as tags "a" dentro da navbar vão ter uma estilização especifica*/
+    color: var(--amarelo);
+    text-decoration: none; /*Tira qualquer decoração do texto*/
+}
+
+.agora{
+        font-weight: bolder; 
+}
+
+
+/*BANER*/
+
+.banner{
+    height: 400px;/* 400px é um valor fixo*/
+    width: 100%; /* 100% é um valor fluido*/
+    background-image: url(../assets/imgs/bg-jelly-fish-para-home.png);/* ../ entende que voce esta procurando uma caminho*/
+    background-size: cover; /* Para que a imagem ocupe tudo */
+}
+
+.banner .container{
+    height: 100%;
+    width: 100%;
+    display: flex; /*define como flexivel*/
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .container p{
+    width: 170px;
+    margin: 0;
+    color: white;
+    font-size: 24px;
+
+}
+
+.banner .container span{
+    font-weight: bolder;
+}
+
+/*MISSÃO VISÃO E VALORES*/
+
+.social{
+    height: 400px;
+    width: 100%;
+    background-color: #dcdcdc;
+}
+
+.social .container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box{ /* definição das imagens*/
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+}
+
+.box img{
+    width: 120px;
+    height: 120px;
+
+}
+
+.box h4{
+    margin: 0;
+    margin-top: 10px;
+    color: #e4005a;
+}
+
+
+/*FOOTER*/
+
+.footer{
+    height: 120px;
+    width: 100%;
+    background-color: var(--azul);
+}
+
+.footer .container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.footer h4{
+margin-bottom: 0;
+}
